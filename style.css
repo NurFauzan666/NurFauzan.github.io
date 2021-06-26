@@ -1,0 +1,402 @@
+@import url('https:fonts.googleapis.com/css?family=poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background: #fff;
+}
+
+
+.idubzz {
+  width: 100%;
+  height: 140px;
+  background: #fff;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #094b65, transparent);
+  z-index: 100;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+
+section #text {
+  position: relative;
+  color: #094b65;
+  font-size: 10vw;
+  text-align: center;
+  line-height: 0.55em;
+  font-family: 'Rancho', cursive;
+  transform: translateY(-50%);
+}
+
+section #text span {
+  font-size: 0.2em;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-family: 'poppins', sans-serif;
+}
+
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background:  #094b65;
+  height: auto;
+}
+.sec h2 {
+  font-size: 4.5em;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: 'Teko', sans-serif;
+}
+.sec h4 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: 'Teko', sans-serif;
+}
+.sec p {
+  font-size: 1.5em;
+  color: #fff;
+  font-family: 'Rancho', cursive;
+  letter-spacing: 1px;
+}
+
+.sec p a {
+  font-size: 1.5em;
+  color: #fff;
+  font-family: 'Rancho', cursive;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.zan {
+  background-color:#fff;
+  padding-top: 60px;
+}
+.nur {
+  background:  #094b65;
+}
+.zansord {
+  width: 100%;
+  height: 70px;
+  background:  #094b65;
+}
+.zansord1 {
+  width: 100%;
+  height: 20px;
+  background:  #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* game */
+
+/* game */
+
+@font-face {
+  font-family: 'game';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button:focus {
+  outline: 0;
+}
+
+canvas {
+  background-color: #181825;
+}
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+#ui {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  flex-flow: column;
+  margin-left: 10px;
+}
+
+#score {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.noselect {
+  user-select: none;
+}
+#replay {
+  font-size: 10px;
+  padding: 10px 20px;
+  background: #6e7888;
+  border: none;
+  color: #222738;
+  border-radius: 20px;
+  font-weight: 800;
+  transform: rotate(270deg);
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#replay:hover {
+  background: #a6aab5;
+  background: #4cffd7;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#replay svg {
+  margin-right: 8px;
+}
+@media (max-width: 600px) {
+  #replay {
+    margin-bottom: 20px;
+  }
+  #replay,
+  h2 {
+    transform: rotate(0deg);
+  }
+  #ui {
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+  }
+  #score {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  .container {
+    flex-flow: column wrap;
+  }
+}
+#author {
+  bottom: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: inherit;
+  text-transform: uppercase;
+  padding-left: 35px;
+  color: #4cffd7;
+}
+#author span {
+  font-size: 10px;
+  margin-left: 20px;
+  color: inherit;
+  letter-spacing: 4px;
+}
+#author h1 {
+  font-size: 25px;
+}
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+/* akhir game */
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+
+  font-family: 'open sans';
+  padding-top: 60px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.footer-content p {
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 25px;
+margin-top: 60px;
+  font-family: 'Rancho', cursive;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  padding: 20px 0;
+  text-align: center;
+  margin-left: -40px;
+  margin-right: -16px;
+  margin-bottom: -20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 1200px) {
+  section #text {
+    font-size: 17vw;
+  }
+  section img #bird1 {
+    width: 40%;
+    
+  }
+  section img #bird2 {
+    width: 40%;
+    
+  }
+  section img #forest {
+    width: 40%;
+    
+  }
+  section img #rocks {
+    width: 40%;
+    
+  }
+  section img #water {
+    width: 40%;
+    
+  }
+
+  .sec p {
+    font-size: 45px;
+  }
+  .sec h2 {
+    font-size: 6em;
+  }
+  .sec h4 {
+    font-size: 4.5em;
+  }
+  .nur h2 {
+    font-size: 3.8em;
+  }
+  .nur p {
+    font-size: 1.8em;
+  }
+  .footer-bottom p {
+    font-size: 25px;
+  }
+  .footer-content h3 {
+    font-size: 4.3rem;
+  }
+  .footer-content p {
+    font-size: 45px;
+  }
+  .socials a i {
+    font-size: 2rem;
+  }
+  .btn {
+    width: 110px;
+    height: 45px;
+  } 
+  #replay {
+    font-size: 15px;
+    padding: 10px 20px;
+    background: #6e7888;
+    border: none;
+    color: #222738;
+    border-radius: 30px;
+    font-weight: 800;
+    transform: rotate(270deg);
+    cursor: pointer;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 350px) {
+ 
+}
+
+
+
+
